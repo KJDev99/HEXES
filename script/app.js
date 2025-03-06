@@ -7,8 +7,8 @@ hexPattern.forEach((count) => {
   for (let i = 0; i < count; i++) {
     const hex = document.createElement("div");
     hex.classList.add("hex-cell");
-    hex.innerText = "50";
     hex.addEventListener("click", () => {
+      hex.innerText = "50";
       if (
         !hex.classList.contains("orange") &&
         !hex.classList.contains("green")
@@ -18,6 +18,7 @@ hexPattern.forEach((count) => {
         hex.classList.remove("orange");
         hex.classList.add("green");
       } else if (hex.classList.contains("green")) {
+        hex.innerText = "";
         hex.classList.remove("green");
       }
     });
