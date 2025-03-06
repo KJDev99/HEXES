@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexes Classic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="balance">
+        <img src="../imgs/kx.png" alt="KK" /> <span>0</span>
+        <div class="balance_bts">
+          <button class="btn1">WITHDRAW</button>
+          <button class="btn2">FREE KX</button>
+        </div>
+      </div>
+      <div class="balance">
+        <img src="../imgs/star.png" alt="Stars" />
+        <span class="span2">12 000</span>
+        <div class="balance_bts">
+          <button class="btn3">BUY</button>
+          <button class="btn2">FREE STARS</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <i class="fa-solid fa-spinner fa-spin waiting_loader"></i>
+      <p class="waiting_text">calculating prize</p>
+      <div class="hex-grid" id="hexGrid"></div>
+
+      <div class="wait_user">
+        <div class="user_info">
+          <div class="hex-cell first">50</div>
+          <div class="user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="user_info">
+          <i class="fa-solid fa-spinner fa-spin waiting_loader"></i>
+          <p class="waiting_text">looking for player</p>
+        </div>
+        <div class="user_info">
+          <div class="hex-cell"></div>
+          <div class="user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+      </div>
+      <button class="play-cancel">Cancel</button>
+    </div>
+
+    <script src="../script/app.js"></script>
+  </body>
+</html>

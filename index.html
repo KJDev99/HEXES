@@ -3,11 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HEXES</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Hexes Classic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1>START</h1>
+    <div class="header">
+      <div class="balance">
+        <img src="imgs/kx.png" alt="KK" /> <span>0</span>
+        <div class="balance_bts">
+          <button class="btn1">WITHDRAW</button>
+          <button class="btn2">FREE KX</button>
+        </div>
+      </div>
+      <div class="balance">
+        <img src="./imgs/star.png" alt="Stars" />
+        <span class="span2">12 000</span>
+        <div class="balance_bts">
+          <button class="btn3">BUY</button>
+          <button class="btn2">FREE STARS</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img class="logo" src="./imgs/logo.png" alt="" />
+      <img src="./imgs/classic.png" alt="" class="classic" />
+      <div class="hex-grid" id="hexGrid"></div>
+
+      <p class="choose_text">CHOOSE BET</p>
+      <img src="./imgs/star.png" class="choose_img" alt="" />
+      <span class="choose_num">50</span>
+      <button class="play-btn">
+        <a href="./pages/waiting.html">PLAY ONLINE</a>
+      </button>
+    </div>
+
+    <script src="./script/app.js"></script>
   </body>
 </html>
