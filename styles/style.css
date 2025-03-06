@@ -135,6 +135,9 @@ a {
 .hex-cell {
   position: relative;
 }
+.hex-cell.gray {
+  background: #4b4c4c;
+}
 
 .hex-cell::before {
   content: "";
